@@ -38,7 +38,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     host, port = args.host, args.port
 
-    for index in range(10):
+    for index in range(100):
         thread = Thread(target=main, args=((host, port, index)))
         thread.start()
         time.sleep(0.2)
